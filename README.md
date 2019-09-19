@@ -6,38 +6,17 @@ https://www.kaggle.com/mousehead/songlyrics
 
 ## Purpose of Repo - Cosine Similarity of Embeddings
 
-The purpose of this repo is to demonstrate two functionalities. Firstly, I want to demonstrate an implementation of the Universal Sentence Encoder, as welll as some experimental NLP techniques in order to get a 'better fit' from the sentence encoder. This is done within the Lyrics_NLP notebook.
+The purpose of this repo is to demonstrate two functionalities. Firstly, I want to demonstrate an implementation of the Universal Sentence Encoder, as welll as some experimental NLP techniques in order to get a 'better fit' from the sentence encoder. This can be shown in its full exploratory form in Lyrics_NLP notebook.
+
+I also implemented it in python, with the three files. Match_news.py is the main file to run, and will call the supporting functions from the others. 
 
 This is implemented by taking in a news article as an input, and comparing it to a series of songs lyrics. The lyrics and news article both become embedded. Cosine similarity is then taken to get the song that is most similar to the news article. The NLP techniques that I discussed earlier are twofold:
 - First, I got rid of all stop words and lemmatized the words in order to get some basis of word for the model
 - Second, I wanted to change the 'weighting' of each of the paragraphs. I thought that potentially Nouns / Proper Nouns were the most important aspect when comparing two paragraphs together, as often these nouns are what the song ends up  being about. In order to weight these higher, I repeat them twice in the text. I also repeat the adjectives and verbs once in order to get a more ideal weighting system
 
-Note that I ran into issues running this on my local machine (w/out GPU), so it may be beneficial to run it on Google Colab, or ensure that your machine is powerful enough to process the embeddings.
+Note that running this function without a GPU may be hard / impossible, so it may be beneficial to run it on Google Colab, or ensure that your machine is powerful enough to process the embeddings.
 
 Also note that I subsetted the number of artists to be restricted to:
-
-Zac Brown Band
-Ziggy Marley
-The Beatles
-Arrogant Worms
-Billy Joel
-Bob Marley
-Coldplay
-Creedence Clearwater Revival
-Elton John
-Eminem
-Fleetwood Mac
-Garth Brooks
-John Denver
-Kanye West
-Linkin Park
-Lynyrd Skynyrd
-Rage Against The Machine
-Rascal Flatts
-Red Hot Chili Peppers
-System Of A Down
-Tragically Hip
-The White Stripes
 
 This was mainly due to processing speed. If you want to look at a particular artist, include them in the code.
 
