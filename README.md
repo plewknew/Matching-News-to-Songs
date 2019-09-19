@@ -4,7 +4,7 @@
 Note the data has been downloaded from:
 https://www.kaggle.com/mousehead/songlyrics
 
-### Purpose of Repo - Cosine Similarity of Embeddings
+## Purpose of Repo - Cosine Similarity of Embeddings
 
 The purpose of this repo is to demonstrate two functionalities. Firstly, I want to demonstrate an implementation of the Universal Sentence Encoder, as welll as some experimental NLP techniques in order to get a 'better fit' from the sentence encoder. This is done within the Lyrics_NLP notebook.
 
@@ -14,14 +14,39 @@ This is implemented by taking in a news article as an input, and comparing it to
 
 Note that I ran into issues running this on my local machine (w/out GPU), so it may be beneficial to run it on Google Colab, or ensure that your machine is powerful enough to process the embeddings.
 
-### Purpose of Repo - TSNE Visualization of Lyrics
+Also note that I subsetted the number of artists to be restricted to:
+
+Zac Brown Band
+Ziggy Marley
+The Beatles
+Arrogant Worms
+Billy Joel
+Bob Marley
+Coldplay
+Creedence Clearwater Revival
+Elton John
+Eminem
+Fleetwood Mac
+Garth Brooks
+John Denver
+Kanye West
+Linkin Park
+Lynyrd Skynyrd
+Rage Against The Machine
+Rascal Flatts
+Red Hot Chili Peppers
+System Of A Down
+Tragically Hip
+The White Stripes
+
+This was mainly due to processing speed. If you want to look at a particular artist, include them in the code.
+
+
+## Purpose of Repo - TSNE Visualization of Lyrics
 
 The second thing that I did for this project was to visualize a series of songs from a variety of artists. 
 
-As of right now I have:
-- Eminem
-- Beyonce
-- Bob Marley
+As of right now I have over 55k different lyrics, and am working on creating a visualization that allows users to select by user and select by 
 
 Although I want to get lyrics from more politically driven artists if I can find some online. I want to take these lyrics and visualize them at a song level. This means embedding the NLP preprocessed lyrics, and then using TSNE to do feature reduction to two dimensions. The goal of this is to look for similarities between song lyrics to see if they form some natural patterns in the data. It is interesting at a song level, as you can see songs similar to each other lyrically. Note that this does not have any statistical meaning, but is an exploratory method.
 
