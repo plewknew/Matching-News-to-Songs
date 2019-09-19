@@ -14,9 +14,9 @@ article_url = input('Please enter the URL of your Article: ')
 
 
 if not path.exists('Lyric_embeddings.csv'):
-    generate_embed = input('Generating the embeddings for all lyrics takes a very long time...continue? (Y/N)')
-        if generate_embed = 'Y':
-            generate_lyric_embeddings()
+    generate_embed = input('\nGenerating the embeddings for all lyrics takes a very long time...continue? (Y/N):  ')
+    if generate_embed == 'Y':
+        generate_lyric_embeddings()
 
 
 

@@ -10,7 +10,7 @@ import tensorflow_hub as hub
 
 
 def nlp_weighting(input_list):
-    print('Start')
+    print('\nStart NLP Weighting')
     nlp = spacy.load('en')
     newtext = []
 
@@ -35,21 +35,18 @@ def nlp_weighting(input_list):
                     tempDoc = tempDoc + ' ' + str(token.lemma_)
                     
         #Here we have a hard cutoff at 2100 characters. THis is because there were memory issues with the encoding otherwise
-        if len(tempDoc) > 2100:
-            tempDoc = tempDoc[0:2100]
         if len(tempDoc) < 110:
             tempDoc =''
 
         newtext.append(tempDoc)
         
-    print('Returned')
+    print('Returned Post - NLP')
         
     return(newtext)
 
 
 def embed(text):
-    print('Start')
-    print('Starting embeddings...')
+    print('\nStarting embeddings...')
     #embed_US = hub.Module("universal_sentence")
     embed_US = hub.Module("https://tfhub.dev/google/universal-sentence-encoder/2")
     embeddings = embed_US(text)

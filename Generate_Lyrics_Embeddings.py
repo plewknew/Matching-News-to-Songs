@@ -7,7 +7,7 @@ from Support_functions import embed
  
 def generate_lyric_embeddings():
     #First we import all of the song Lyrics (this should probably be done in another python script)
-    df_songs = pd.DataFrame(pd.read_csv('songdata.csv'))
+    df_songs = pd.DataFrame(pd.read_csv('songdata_10_song.csv'))
 
     #If you want to subset to only select certain artists, this is the place to do so:
 
