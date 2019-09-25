@@ -21,7 +21,9 @@ Also note that I subsetted the number of artists to be restricted to:
 This was mainly due to processing speed. If you want to look at a particular artist, include them in the code.
 
 
-## Purpose of Repo - TSNE Visualization of Lyrics - TODO
+## Purpose of Repo - TSNE Visualization of Lyrics - To Implement
+
+*NOTE that I have implemented this locally, but am cleaning up my code in order to put it up on Github. There should be updates within the next couple weeks*
 
 The second thing that I did for this project was to visualize a series of songs from a variety of artists. 
 
